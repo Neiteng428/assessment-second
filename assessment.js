@@ -103,11 +103,7 @@ let text = document.getElementById("floating-text");
 let size = 0;
 
 //ルフィを動かす処理
-function float(){
-    if(size >= 2000){
-        size = 0;
-    }
-    
+function float(){ 
     size += Math.random() * (500 - 3) + 3;
     size %= 2000;
     if(0 <= size && size < 500){
