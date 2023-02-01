@@ -104,6 +104,7 @@ let size = 0;
 
 //ルフィを動かす処理
 function float(){
+    size = 0;
     size += Math.random() * (500 - 3) + 3;
     size %= 2000;
     if(0 <= size && size < 500){
